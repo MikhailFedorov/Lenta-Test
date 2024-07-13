@@ -65,7 +65,6 @@ merged_df['Тип мониторинга'] = merged_df.apply(monitoring_type, ax
 
 # Удаление временных столбцов
 merged_df.drop(columns=['Нормализованный_Товар', 'file2_merge', 'file3_merge'], inplace=True)
-merged_df.drop_duplicates(subset=None, keep="first", inplace=True)
 
 # Сохранение результата в новый Excel-файл
 output_file_path = 'Лента_тестовое_задание_1.xlsx'
